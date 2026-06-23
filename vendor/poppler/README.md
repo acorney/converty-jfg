@@ -1,23 +1,15 @@
-# Poppler Windows Binaries
+# Poppler Windows Binaries (bundled)
 
-This directory should contain the Poppler Windows build so that Converty can
-rasterise scanned PDF pages without requiring a separate user installation.
+The `Library/bin/` directory contains Poppler v26.02.0 Windows binaries,
+committed to the repo so the app runs without any user installation.
 
-## How to populate
+Source: https://github.com/oschwartz10612/poppler-windows/releases/tag/v26.02.0-0
 
-1. Download the latest release from: https://github.com/oschwartz10612/poppler-windows/releases
-2. Extract the zip — you'll get a folder like `poppler-24.xx.0/`
-3. Copy the contents of that folder here so the structure looks like:
+Only the runtime binaries (`Library/bin/*.exe` and `*.dll`) are included;
+headers and static libs are omitted.
 
-```
-vendor/poppler/
-  Library/
-    bin/
-      pdftoppm.exe
-      pdfinfo.exe
-      ...
-```
+## Updating Poppler
 
-4. Commit the binaries (they are intentionally tracked in git for zero-install deployment).
-
-The app auto-detects `vendor/poppler/Library/bin/pdftoppm.exe` on launch.
+1. Download the new release zip from the link above.
+2. Delete `Library/bin/` and replace with the new `Library/bin/` from the zip.
+3. Commit.

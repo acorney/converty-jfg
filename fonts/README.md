@@ -1,14 +1,12 @@
-# Fonts
+# Fonts (bundled)
 
-Place Montserrat and Poppins TTF files here for bundling.
+These font files are committed to the repo and loaded automatically by the app.
 
-Download from Google Fonts:
-- Montserrat: https://fonts.google.com/specimen/Montserrat
-  - Montserrat-Regular.ttf (400)
-  - Montserrat-Medium.ttf (500)
-  - Montserrat-SemiBold.ttf (600)
-  - Montserrat-Bold.ttf (700)
-- Poppins: https://fonts.google.com/specimen/Poppins
-  - Poppins-Italic.ttf
+| File | Source | Covers |
+|---|---|---|
+| `Montserrat-Variable.ttf` | Google Fonts (OFL licence) | All weights 100–900 |
+| `Poppins-Italic.ttf` | Google Fonts (OFL licence) | Italic accent text |
 
 The app falls back to Segoe UI if these files are absent.
+
+Both fonts are licensed under the SIL Open Font Licence 1.1.
