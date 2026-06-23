@@ -9,8 +9,8 @@ if errorlevel 1 (
 )
 
 call .venv\Scripts\activate.bat
-pip install --upgrade pip --quiet
-pip install -r requirements.txt --quiet
+python -m pip install --upgrade pip --quiet
+python -m pip install -r requirements.txt --quiet
 
 echo.
 echo [Converty] Setup complete. Run launch.bat to start the app.
