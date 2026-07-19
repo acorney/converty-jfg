@@ -6,5 +6,4 @@ if not exist ".venv\Scripts\python.exe" (
     call setup.bat
 )
 
-call .venv\Scripts\activate.bat
-pythonw main.py
+.venv\Scripts\pythonw.exe main.py
